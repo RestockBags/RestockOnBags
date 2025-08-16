@@ -5,7 +5,7 @@ const { Connection, PublicKey, Keypair, Transaction, SystemProgram, sendAndConfi
 const bs58 = require("bs58");
 const config = require("./config.json"); 
 
-const TARGET_MINT_ADDRESS = "FU9etYuLtzANF59y5oNoByLge3raMEUn7EC56LkuBAGS";
+const TARGET_MINT_ADDRESS = "TokenMintAddress";
 const SOL_MINT_ADDRESSES = [
   "So11111111111111111111111111111111111111111", 
   "So11111111111111111111111111111111111111112"  
@@ -388,4 +388,5 @@ bitqueryConnection.on("close", (code, reason) => {
 
 bitqueryConnection.on("error", (error) => {
   console.error("WebSocket Error:", error.message);
+
 });
